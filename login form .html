@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LOGIN FORM</title>
+</head>
+<link rel="stylesheet" type="text/css" href="CSS/new.css">
+<body>
+
+<form name="myform">
+
+
+<div class="signup">
+<h1>Signup Form</h1>
+
+
+<label>Email</label>
+<input type="email" name="email" placeholder="Example:domain@gmail.com" >
+
+<label>Password</label>
+<input type="password" name="password" placeholder="Example: Pakistan111"  >
+
+
+
+
+<input  type="button" value="Login" onclick="signup()">
+
+</div>
+
+</form>
+
+<script>
+
+function signup()
+{
+
+
+var email = window.myform.email.value;
+var password = window.myform.password.value;
+
+if (email == "" || password  == "") 
+
+{
+window.alert("Invalid Username or Password...!!");
+
+}
+
+else
+{
+	window.location = ("Gallery.html");
+}
+
+
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

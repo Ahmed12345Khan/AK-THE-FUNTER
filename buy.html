@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Buy</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="CSS/buy.css">
+<link rel="stylesheet" type="text/css" href="icofont/icofont.min.css">	
+
+	
+	
+<script>
+function abc()
+{
+// values from Form
+var cname = window.Buy.cname.value;
+var menu = window.Buy.menu.value;
+var qty = window.Buy.qty.value;
+var cnumber = window.Buy.cnumber.value;
+var address = window.Buy.address.value;
+
+// Menu Rates Variables
+
+var AustralianBell = 3000000;
+var CholistaniCow = 1000000;
+var RedSindhiCow = 90000;
+var DhanniCow = 80000;
+var SahiwalCow = 800000 ;
+var DroughmasterCow = 70000;
+
+//goat
+var WoolyGoat  = 40000 ;
+var NannyGoat = 50000;
+var Vincentvangoats = 80000;
+var ButtinskyGoat = 30000;
+var RamseyGoat = 55000;
+var PureGulabiGoat = 100000 ;
+
+//camel	
+var BrownCamel = 1000000;
+var PureBlackCamel = 5000000;
+
+var price;
+
+//Form validation
+if (cname == "" || menu  == "" || qty  == "" || cnumber  == "" || address == "" )
+{
+
+window.alert("All Fields Required");
+
+}
+
+//Checking menu
+
+if(menu == "Australian Bell")
+{
+	price = qty *AustralianBell;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+}
+else if (menu == "Cholistani Cow"){
+	price = qty * CholistaniCow;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}
+
+else if (menu == "Red Sindhi Cow"){
+	price = qty * RedSindhiCow;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}
+else if (menu == "Dhanni Cow"){
+	price = qty * DhanniCow;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}
+else if (menu == "Sahiwal Cow "){
+	price = qty * SahiwalCow ;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}
+else if (menu == "Droughmaster Cow"){
+	price = qty * DroughmasterCow;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}
+else if (menu == "Wooly Goat"){
+	price = qty * WoolyGoat;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}
+else if (menu == "Nanny Goat"){
+	price = qty * NannyGoat;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}
+else if (menu == "Vincent van goats"){
+	price = qty * Vincentvangoats;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}
+else if (menu == "Buttinsky Goat"){
+	price = qty * ButtinskyGoat;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}
+else if (menu == "Ramsey Goat"){
+	price = qty * RamseyGoat;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}
+else if (menu == "Pure Gulabi Goat"){
+	price = qty * PureGulabiGoat;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}
+else if (menu == "Brown Camel"){
+	price = qty * BrownCamel;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}	
+else if (menu == "Pure Black Camel"){
+	price = qty * PureBlackCamel;
+	document.getElementById('price').innerHTML = "Total Bill is: " + price;
+
+}	
+	
+	
+}
+</script>	
+	
+	
+	
+<body background="IMAGES/Butterflies-On-Flowers.jpg">
+	
+<div  class="BUY" >	
+<form class="Buy-form validate-form"  name="Buy">	
+	
+<h1>BUY</h1>	
+<br>
+
+	<span class="symbol-input100" >
+	<i class="icofont-user"></i>
+	</span>		
+<input type="text" placeholder="Enter Name" name="cname">
+<br><br>	
+	
+<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+<span class="focus-input100"></span>
+	<span class="symbol-input100">
+	<i class="icofont-list"></i>
+	</span>	
+ <select class="input100" name="menu">
+<option> Select Annimal </option>
+  <option>Australian Bell </option>
+  <option> Cholistani Cow </option>
+   <option> Red Sindhi Cow </option>
+	<option> Dhanni Cow </option>
+	 <option> Sahiwal Cow</option>
+	 <option> Droughmaster Cow</option>
+	 
+	 <!-- Goat -->
+	 <option>Wooly Goat</option>
+  <option> Nanny Goat </option>
+   <option> Vincent van goats </option>
+	<option>Buttinsky Goat</option>
+	 <option> Ramsey Goat</option>
+	 <option>Pure Gulabi Goat</option>
+	 
+	 <!-- Camel -->
+	 <option>Brown Camel </option>
+  <option> Pure Black Camel</option>
+   </select>
+	
+	
+</div>
+
+
+	
+	<br>
+<span class="symbol-input100">
+	<i class="icofont-listing-number"></i>
+	</span>	
+<input type="number" placeholder="Qty" name="qty" >
+<br>
+<span class="symbol-input100">
+	<i class="icofont-phone"></i>
+	</span>		
+<input type="text" placeholder="Contact Number" name="cnumber">
+			
+	<br>
+<span class="focus-input100"></span>
+	<span class="symbol-input100">
+	<i class="icofont-address-book"></i>
+	</span>		
+  <div class="wrap-input100 validate-input" data-validate = "Address is required" >
+<textarea cols="35" rows="5"  style="background-color:#F4FB11"  name="address" > </textarea>
+
+</div>
+	
+<br>
+
+<input class="BUY-form-btn" type="button" value="Place Order" onClick="abc()">
+<br><br>
+<input class="BUY-form-btn" type="button" value="Print Slip"  onClick="window.print()" >	
+	
+</form>
+</div>
+	
+
+	
+	
+
+	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+	
+</body>
+</html>
